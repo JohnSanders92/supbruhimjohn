@@ -1,5 +1,4 @@
 import React from 'react';
-import logo from './logo.svg';
 import squirtles from './squirtles.webp'
 import './App.css';
 
