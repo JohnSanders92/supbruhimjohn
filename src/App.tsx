@@ -8,12 +8,12 @@ function App() {
       <header className="App-header">
 
         <div className="hero">
-          <svg className="circle-text"
+          <svg className="top-circle-text" 
             viewBox="0 0 100 100"
             xmlns="http://www.w3.org/2000/svg"
           >
             <path fill='transparent'
-              id="circlePath"
+              id="topCircle"
               d="
                   M 10, 50
                   a 40,40 0 1,1 80,0
@@ -21,8 +21,26 @@ function App() {
                 "
             />
             <text fill="currentColor">
-              <textPath href="#circlePath">
+              <textPath href="#topCircle">
               Sup bruh I'm John
+              </textPath>
+            </text>
+          </svg>
+          <svg className="bottom-circle-text" 
+            viewBox="0 0 100 100"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path fill='transparent'
+              id="bottomCircle"
+              d="
+                M 90,50
+                a 40,40 0 1,0 -80,0
+                a 40,40 0 1,0 80,0
+                "
+            />
+            <text fill="currentColor">
+              <textPath href="#bottomCircle">
+              Stay radical dude
               </textPath>
             </text>
           </svg>
@@ -31,7 +49,7 @@ function App() {
           </div>
         </div>
 
-        <p>
+        <p className='progress'>
           (A work in progress)
         </p>
 

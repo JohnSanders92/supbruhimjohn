@@ -7,11 +7,6 @@
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
 .App-header {
   background-color: #282c34;
@@ -20,29 +15,40 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  /* font-size: calc(10px + 2vmin); */
   color: white;
+}
+.progress {
+  width: 100%;
+  color:aquamarine;
 }
 
 .rounded-boarder {
   width: 200px;
-  /* height: 200px; */
   aspect-ratio: 1;
   overflow: hidden;
   border-radius: 50%;
   border: 3px solid var(--cyan-text);
 }
 
-.circle-text {
-  width: 300px;
-  /* height: 200px; */
-  aspect-ratio: 1;
+.top-circle-text, .bottom-circle-text{
   overflow: visible;
-  transform: rotate(-1.5deg);
+  aspect-ratio: 1;
   color: var(--cyan-text);
 }
 
-.circle-text, .rounded-boarder {
+.top-circle-text {
+  width: 300px;
+  transform: rotate(-1.5deg);
+}
+
+.bottom-circle-text {
+  width: 350px;
+  transform: rotate(137.5deg);
+  font-size: xx-small;
+  color: rgb(244, 97, 246);
+}
+
+.top-circle-text, .bottom-circle-text, .rounded-boarder {
   grid-column: 1;
   grid-row: 1;
   margin: auto;
@@ -55,10 +61,8 @@
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
   --cyan-text: rgb(8, 242, 250);
+  justify-content: center;
 }
-
-/* isolation: isolate; */
-
 
 .selfie {
 	width: 100%;
