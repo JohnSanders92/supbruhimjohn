@@ -12,9 +12,9 @@ function App() {
             <img src={selfie} className="selfie" alt="selfie" />
           </div>
 
-          <div className={"circle-parent"} id="circle-rotate">
+          <div className={"circle-parent " + (rotateCirlceParent ? "circle-rotate" : "")}>
             <svg
-              onClick={() => setRotateState()}
+              onClick={() => setRotateCicleParent(!rotateCirlceParent)}
               className="top-circle-text"
               viewBox="-19 -35 201.45841 100.72921"
               xmlns="http://www.w3.org/2000/svg">
@@ -33,7 +33,7 @@ function App() {
             </svg>
 
             <svg
-              onClick={() => setRotateState()}
+              onClick={() => setRotateCicleParent(!rotateCirlceParent)}
               className="bottom-circle-text"
               viewBox="-19 -35 201.9305 101.47986"
               xmlns="http://www.w3.org/2000/svg">
@@ -59,11 +59,6 @@ function App() {
       </header>
     </div>
   );
-
-  function setRotateState() {
-    setRotateCicleParent(!rotateCirlceParent)
-    document.getElementById("circle-rotate")!.style.animationPlayState = rotateCirlceParent ? "running" : "paused"
-  }
 }
 
 export default App;
