@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import selfie from './me2.webp'
 import './App.css';
-import { parseJsonText } from 'typescript';
 
 function App() {
   const [rotateCirlceParent, setRotateCicleParent] = useState(false);
