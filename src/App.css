@@ -11,10 +11,8 @@ html {
 @media (prefers-reduced-motion: no-preference) {
   .circle-parent {
     animation: spin 6s infinite linear;
-    animation-play-state: paused;
   }
-
-
+  
   @keyframes spin {
     to {
       rotate: 360deg;
@@ -60,6 +58,11 @@ html {
   display: flex;
   flex-direction: column;
   z-index: 1;
+  animation-play-state: paused;
+}
+
+.circle-rotate{
+  animation-play-state: running;
 }
 
 .top-circle-text,
